@@ -24,13 +24,13 @@ typedef void(^MyResponseCallback)(NSDictionary* response);
     self = [super init];
     
     //create SoD instance, setup dimensions and device type
-    self.SOD = [[SOD alloc] initWithAddress:@"192.168.0.22" andPort:3000];
+    self.SOD = [[SOD alloc] initWithAddress:@"10.12.27.215" andPort:3000];
     self.SOD.device.height = 1;
     self.SOD.device.width = 1;
     self.SOD.device.name = @"Test iPad";
     self.SOD.device.deviceType = @"iPad";
     self.SOD.device.FOV = 33;
-    self.SOD.device.orientation = 45;
+    self.SOD.device.orientation.yaw = 45;
     //self.SOD.height = 50;
     //self.SOD.width = 50;
     //self.SOD.name = @"Test iPad";
